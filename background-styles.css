@@ -1,7 +1,7 @@
 
 .wrapper{
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     perspective: 1px;
 }
@@ -21,7 +21,7 @@ header{
 }
 
 .mountain1{
-
+ 
     transform: translateZ(-2px) translateY(10vh)  scale(3.2);
 }
 
@@ -51,7 +51,15 @@ section{
 }
 
 .comete{
-    transform: translate(150%, -130%);
-}
+    position: absolute;
+    object-fit: cover;
+    width: 600px; height: 600px;
+    animation: animatedBackground 40s ease-in infinite ;
+  }
+
+  @keyframes animatedBackground {
+    from { top: 0%;   transform: translateX(500%) translateY(-380%) translateZ(-5.5px) ; }
+    to { top: 100%; transform: translateX(-370%) translateY(200%) translateZ(-5.6px) ; ; }
+  }
 
 
