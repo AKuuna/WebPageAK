@@ -54,11 +54,11 @@ section{
     position: absolute;
     object-fit: cover;
     width: 600px; height: 600px;
-    animation: animatedBackground 40s ease-in infinite ;
+    animation: animatedBackground 50s ease-in infinite ;
   }
 
   @keyframes animatedBackground {
-    from { top: 0%;   transform: translateX(500%) translateY(-380%) translateZ(-5.5px) ; }
+    from { top: 0%;   transform: translateX(500%) translateY(-390%) translateZ(-5.5px) ; }
     to { top: 100%; transform: translateX(-370%) translateY(200%) translateZ(-5.6px) ; ; }
   }
 
