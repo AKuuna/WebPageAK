@@ -3,7 +3,7 @@
 }
 
 body{
-    /* scroll-behavior: smooth !important; */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Amatic SC', cursive,'Gloria Hallelujah', cursive,'Permanent Marker', cursive;
@@ -21,7 +21,6 @@ nav{
     font-size: 1rem;
     color: white;
     border-bottom: 0.5px solid white;
-    
 }
 
 .nav-bar-title u1,
@@ -46,7 +45,6 @@ nav{
 .nav-bar-li li :hover{
     background-color: rgb(29, 29, 69);
 }
-
 
 a.anchor {
     display: block;
@@ -74,10 +72,10 @@ a.anchor {
 
 .content{
     margin: 0;
-    scroll-behavior: smooth !important;
+    margin-left: 50px;
     width:100%;
     min-height: 350vh;
-    transform: translateY(22vh);
+    /* transform: translateY(0vh); */
     z-index: 2;
     background-color: rgb(0,23,42);
     font-size: 1.2rem;

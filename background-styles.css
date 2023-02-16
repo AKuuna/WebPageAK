@@ -1,9 +1,7 @@
 
 .wrapper{
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    perspective: 1px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -11,26 +9,32 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
+    height: 100vh;
+
 }
 
 .background{
-    transform: translateZ(-8px)  scale(10);
+    height: 105vh;
+    width: auto;
+    z-index: -5;
 }
 
 .mountain1{
- 
-    transform: translateZ(-2px) translateY(10vh)  scale(3.2);
+    height: 105vh;
+    top: 8vh;
+    z-index: -1;
 }
 
 .mountain2{
-    transform: translateZ(-3px) translateY(10vh) scale(4.2);
+    height: 105vh;
+    top: 8vh;
+    z-index: -2;
 }
 
 .mountain3{
-    transform: translateZ(-4px) translateY(10vh)  scale(5.2);
+    height: 105vh;
+    top: 8vh;
+    z-index: -3;
 }
 
 .background,
@@ -38,8 +42,6 @@ header{
 .mountain2, 
 .mountain3{
     position: absolute;
-    height: 100%;
-    width: 100%;
     object-fit: cover;
 }
 
@@ -53,13 +55,14 @@ section{
 .comete{
     position: absolute;
     object-fit: cover;
-    width: 600px; height: 600px;
-    animation: animatedBackground 40s ease-in infinite ;
+    z-index: -4;
+    width: 60px; height: 60px;
+    animation: animatedBackground 45s ease-in infinite ;
   }
 
   @keyframes animatedBackground {
-    from { top: 0%;   transform: translateX(500%) translateY(-380%) translateZ(-5.5px) ; }
-    to { top: 100%; transform: translateX(-370%) translateY(200%) translateZ(-5.6px) ; ; }
+    from { transform: translateX(600%) translateY(-600%); }
+    to { transform: translateX(-50%) translateY(300%); }
   }
 
 
