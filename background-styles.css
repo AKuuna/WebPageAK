@@ -9,31 +9,31 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
 
 }
 
 .background{
-    height: 105vh;
+    height: 110vh;
     width: auto;
     z-index: -5;
 }
 
 .mountain1{
-    height: 105vh;
+    height: 115vh;
     top: 8vh;
     z-index: -1;
 }
 
 .mountain2{
     height: 105vh;
-    top: 8vh;
+    top: 10vh;
     z-index: -2;
 }
 
 .mountain3{
-    height: 105vh;
-    top: 8vh;
+    height: 115vh;
+    top: 10vh;
     z-index: -3;
 }
 
@@ -56,7 +56,7 @@ section{
     position: absolute;
     object-fit: cover;
     z-index: -4;
-    width: 60px; height: 60px;
+    width: 80px; height: 80px;
     animation: animatedBackground 45s ease-in infinite ;
   }
 
